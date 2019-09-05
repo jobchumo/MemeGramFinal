@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MemeGram</title>
+
+    <!-- Favicon -->
+    <link href="assets/img/zany.gif" rel="icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/argon.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-defaultb" style="background-color:ghostwhite">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:ghostwhite">
+        <div class="container">
+            <a class="navbar-brand text-left" href="indexx.jsp"
+                style="font-family: 'Fredoka One', cursive; font-size: 28px">MemeGram</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="index.html">
+                                <img src="assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav mr-lg-auto col-xs-6 ml-lg-auto">
+
+                    <div class="col-lg-12">
+
+
+                        <li class="nav-item">
+                            <div class="form-group pt-3 row">
+
+                                <div class="input-group input-group-alternative input-group"
+                                    style="width: 100%;width:380px">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                                    </div>
+
+                                    <input class="form-control " id="searchf" placeholder="Search Memes" type="text"
+                                        style="color: black" width="1000">
+
+                                </div>
+                            </div>
+                    </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+
+                <li class="nav-item">
+                    <a class=" btn btn-default" href="logout">
+                        <i class="ni ni-fat-add"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="shape shape-style-1 bg-gradient-default">
+
+        </div>
+        <div class="container pt-lg-md">
+            <div class="row ">
+                <div class="col-6">
+                    <form action="./PostDB" method="post" role="form" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <p>
+                                <h5>Add Image</h5>
+                            </p>
+                            <input class="form-control form-control-alternative " name="file" type="file" id="selectedFile"
+                                style="display: nonev;">
+
+
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-alternative"
+                                name="title" placeholder="Caption">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Category</label>
+                            <select class="form-control form-control-alternative" name="category" id="cats">
+                                <option>Animals</option>
+                                <option>Anime</option>
+                                <option>Basketball</option>
+                                <option>Car</option>
+                                <option>Comics</option>
+                                <option>Gaming</option>
+                                <option>Music</option>
+                                <option>Politics</option>
+                                <option>Science and Tech</option>
+                                <option>Football</option>
+                                <option>Tv and Film</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Upload Meme</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-5 pl-5 ">
+                    <img id="blah" class="img-center" height="340px" src="assets/img/squid.png" alt="your image" />
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Core -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Optional plugins -->
+    <script src="assets/vendor/PLUGIN_FOLDER/PLUGIN_SCRIPT.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/argon.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+        $("#selectedFile").change(function () {
+            
+            readURL(this);
+        });
+    </script>
+</body>
+
+</html>

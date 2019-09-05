@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MemeGram</title>
+
+    <!-- Favicon -->
+    <link href="assets/img/zany.gif" rel="icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/argon.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-defaultb" style="background-color:ghostwhite">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:ghostwhite">
+        <div class="container">
+            <a class="navbar-brand text-left" href="indexx.jsp"
+                style="font-family: 'Fredoka One', cursive; font-size: 28px">MemeGram</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="indexx.jsp">
+                                <img src="assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav mr-lg-auto col-xs-6 ml-lg-auto">
+
+                    <div class="col-lg-12">
+
+
+                        <li class="nav-item">
+                            <div class="form-group pt-3 row">
+
+                                <div class="input-group input-group-alternative input-group"
+                                    style="width: 100%;width:380px">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                                    </div>
+
+                                    <input class="form-control " id="searchf" placeholder="Search Memes" type="text"
+                                        style="color: black" width="1000">
+
+                                </div>
+                            </div>
+                    </div>
+                    
+
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+
+                <li class="nav-item">
+                    <a class=" btn btn-default" href="logout">
+                        <i class="ni ni-fat-add"></i>
+                        Log out
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="shape shape-style-1 bg-gradient-default">
+
+        </div>
+        <div class="container pt-lg-md">
+            <div class="row ">
+                <div class="col-lg-5">
+                    <div class="  border-0">
+                        
+                        <div class="card-body px-lg-6 py-lg-5">
+
+                            <form method="post" action="./Profile" role="form">
+                                 
+                                <div class="form-group mb-3">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                                        </div>
+                                        <input name="full_name" class="form-control" placeholder="Full Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                                        </div>
+                                        <input name="user_name" class="form-control" placeholder="Username" type="text">
+                                    </div>
+                                </div>
+                              <div class="form-group mb-3">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                        </div>
+                                        <input name="email_address" class="form-control" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="form-group">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                        </div>
+                                        <input name="pass_word" class="form-control" placeholder="Password" type="password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                        </div>
+                                        <input name="confirm_password" class="form-control" placeholder="Confirm Password" type="password">
+                                    </div>
+                                </div>
+                          
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-block">Update Profile</button>
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <button class="btn btn-primary btn-block">Delete Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5 pl-5 pt-5">
+                        <img id="blah" class="img rounded-circle shadow img-center" height="240px" width="240px" src="assets/img/default.png" alt="your image" />
+                        <div class="form-group">
+                                <p>
+                                    <h5>Change Profile Image</h5>
+                                
+                                <input class="btn btn-default form-control-alternative " name="file" type="file" id="selectedFile"
+                                    style="display: nonev;">
+    
+    
+                            </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core -->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/popper/popper.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Optional plugins -->
+    <script src="/assets/vendor/PLUGIN_FOLDER/PLUGIN_SCRIPT.js"></script>
+
+    <!-- Theme JS -->
+    <script src="/assets/js/argon.js"></script>
+    <script src="/assets/js/main.js"></script>
+      <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+        console.log("helooo");
+        url = window.location.href;
+        console.log(url);
+        var c = getUrlParameter("e");
+        console.log(c);
+        if(c==="creds"){
+            $(".era").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  
+    <span class="alert-inner--text"><strong>Error!</strong> Update Profile Failed</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>`);
+        }
+        
+    </script>
+     <script>
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+        console.log("helooo");
+        url = window.location.href;
+        console.log(url);
+        var c = getUrlParameter("e");
+        console.log(c);
+        if(c==="creds"){
+            $(".era").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  
+    <span class="alert-inner--text"><strong>Error!</strong> Update Profile Successfull</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>`);
+        }
+        
+    </script>
+    <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+    
+                    reader.onload = function (e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+    
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            
+            $("#selectedFile").change(function () {
+                
+                readURL(this);
+            });
+        </script>
+</body>
+
+</html>
